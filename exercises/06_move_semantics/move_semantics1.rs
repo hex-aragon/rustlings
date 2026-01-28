@@ -1,14 +1,16 @@
 // TODO: Fix the compiler error in this function.
 fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
-    let vec = vec;
+    let mut vec = vec;
 
+    println!("Initial vector : {:?}",vec);
     vec.push(88);
-
+    println!("Filled vector: {:?}",vec);
     vec
 }
 
 fn main() {
     // You can optionally experiment here.
+    fill_vec(vec![22,44,66]);
 }
 
 #[cfg(test)]
